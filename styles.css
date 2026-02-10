@@ -32,9 +32,10 @@ p {
 }
 .card button {
     display: block;
-    margin: 10px auto 0 auto;
+    margin: 10px;
     button-color:n #5faa59;
 }
+
 
 
 
