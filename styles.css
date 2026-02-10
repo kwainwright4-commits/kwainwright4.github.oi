@@ -26,15 +26,16 @@ p {
 }
 
 .card img {
-    width: 300px;
+    width: 400px;
     height: 200px;
     margin-bottom: 10x;
 }
 .card button {
     display: block;
     margin: 10px;
-    button-color:n #5faa59;
+    button-color: #5faa59;
 }
+
 
 
 
