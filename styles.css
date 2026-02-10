@@ -29,8 +29,10 @@ p {
     margin-bottom: 10x;
 }
 .card button {
-    position: center;
+    display: block;
+    margin: 10px auto 0 auto;
 }
+
 
 
 
