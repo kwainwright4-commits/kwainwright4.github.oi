@@ -24,8 +24,8 @@ p {
 }
 
 .card img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 10x;
 }
 .card button {
@@ -33,6 +33,7 @@ p {
     margin: 10px auto 0 auto;
     button-color:n #5faa59;
 }
+
 
 
 
