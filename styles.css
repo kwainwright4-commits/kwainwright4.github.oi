@@ -32,4 +32,14 @@ body {
     height: auto;
     margin-bottom: 10px;
 }
-
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+p {
+    font-size: 25px;
+    text-align: center;
+}
+.Add-to-cart {
+    margin-top: auto;   
+    align-self: center;
