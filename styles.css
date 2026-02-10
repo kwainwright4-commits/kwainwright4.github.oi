@@ -13,12 +13,13 @@ body {
 .card {
     display: flex;
     flex-direction: horizontal;
-\    align-items: center;
+    align-items: center;
     text-align: center;
 }
 
 .card img {
-    width: 200px;
+    width: 400px;
     height: auto;
     margin-bottom: 10x;
 }
+
