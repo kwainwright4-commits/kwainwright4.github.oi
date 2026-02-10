@@ -5,6 +5,9 @@ body {
     button-color: #5faa59;
 }
 h1 {
+    text-size:24px;
+}
+p { 
     text-size:18px;
 }
 .row-container {
@@ -25,5 +28,6 @@ h1 {
     height: 500px;
     margin-bottom: 10x;
 }
+
 
 
