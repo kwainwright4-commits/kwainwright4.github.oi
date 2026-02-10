@@ -1,14 +1,16 @@
-body {
+body  {
     font-family: harrington, sans-serif;
     font-color: black;
     background-color: #87d881;
     button-color: #5faa59;
 }
 h1 {
-    text-size:24px;
+    text-size:32px;
+    position: center;
 }
 p { 
-    text-size:18px;
+    text-size:20px;
+    position: center;
 }
 .row-container {
     display: flex;
@@ -33,6 +35,7 @@ p {
     margin: 10px auto 0 auto;
     button-color:n #5faa59;
 }
+
 
 
 
