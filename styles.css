@@ -1,0 +1,24 @@
+body {
+    font-family: harrington, sans-serif;
+    font-color: black;
+    background-color: ##87d881;
+    button-color: #5faa59;
+}
+.row-container {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10x;
+}
