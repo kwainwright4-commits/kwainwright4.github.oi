@@ -1,0 +1,62 @@
+body {
+    font-family: harrington, sans-serif;
+    font-color: black;
+    background-color: rgb(110, 229, 110);
+}
+.row-container {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10x;
+}
+.row-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.blue-yarn {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    text-align: center;
+}
+.yellow-yarn {
+    display: flex;
+    flex-direction: horizontal;     
+    align-items: center;
+    text-align: center;
+}
+.pink-yarn {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    text-align: center;
+}   
+.blue-yarn img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.yellow-yarn img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.pink-yarn img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
