@@ -1,12 +1,15 @@
 <!DOCTYPE html
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yarn Selection</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yarn Selection</title>
+<link rel="stylesheet" href="styles.css">
+<button class="home-btn" onclick="location.href='index.html'">Home</button>
+<button class="back-btn" onclick="history.back()">Back</button>
 </head>
 <body> 
-<link rel="stylesheet" href="styles.css">
+
 <h1>Yarn Selection</h1>
 <p>Explore our wide variety of yarns for all your crafting projects!</p>    
 <div class="row-container2">
@@ -14,24 +17,34 @@
         <h3>Blue Yarn</h3>
         <p> Price: $<span class="price" data-price="3.00">3.00</span></p>
         <img src="blue-yarn.jpg" alt="picture of blue yarn" />
-        <button class="Add-to-cart" onclick"="addToCart(this)">Add to cart</button>
+        <button class="blue-atc" onclick="addToCart('blue-yarn', 3.00)">Add to cart</button>
     </div>
     <div class="yellow-yarn">
         <h3>Yellow Yarn</h3>
         <p> Price: $<span class="price" data-price="3.00">3.00</span></p>
         <img src="yellow-yarn.jpg" alt="picture of yellow yarn" />
-        <button class="Add-to-cart" onclick="addToCart(this)">Add tocart</button>
+        <button class="yellow-atc" onclick="addToCart('yellow-yarn', 3.00)">Add to cart</button>
     </div>
     <div class="pink-yarn"> 
         <h3>Pink Yarn</h3>
         <p> Price: $<span class="price" data-price="3.00">3.00</span></p>
         <img src="pink-yarn.jpg" alt="picture of pink yarn" />
-        <button class="Add-to-cart" onclick="addToCart(this)">Add to cart</button>
+        <button class="pink-atc" onclick="addToCart('pink-yarn', 3.00)">Add to cart</button>
     </div>
 </div> 
 <div id="cart-total">
     <h4>Cart Total: $<span id="total-price">0.00</span></h4>    
 </div>
-<script src="code.js"></script>
+<script>
+    let cartTotal = 0;
+    function addToCart(itemClass, price) {
+        cartTotal += price;
+        updateCartTotalDisplay();
+        console.log(`Added ${itemClass} with price: $${price.toFixed(2)}. New total: $${cartTotal.toFixed(2)}`);
+    }
+    function updateCartTotalDisplay() {
+        document.getElementById("total-price").textContent = cartTotal.toFixed(2);
+    }
+</script>
 </body>
 </html>

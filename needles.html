@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Yarn Selection</title>
+ <link rel="stylesheet" href="styles.css">
+    <button class="home-btn" onclick="location.href='index.html'">Home</button>
+    <button class="back-btn" onclick="history.back()">Back</button>
+</head>
+<body>
+    <h1>Needle Selection</h1>
+    <div class="row-container3">
+        <div class="wooden-needles">
+            <h3>Wooden Needles</h3>
+            <p> Price: $<span class="price" data-price="10.00">10.00</span></p>
+            <img src="wooden-needles.jpg" alt="picture of wooden needles" />   
+            <button class="wooden-atc" onclick="addToCart('wooden-needles', 10.00)">Add to cart</button>
+        </div>
+        <div class="metal-needles">
+            <h3>Metal Needles</h3>
+            <p> Price: $<span class="price" data-price="15.00">15.00</span></p>
+            <img src="metal-needles.jpg" alt="picture of metal needles" />  
+            <button class="metal-atc" onclick="addToCart('metal-needles', 15.00)">Add to cart</button>
+        </div>  
+    </div>
+<script>
+    let cartTotal = 0;
+    function addToCart(item, price) {
+        cartTotal += price;
+        updateCartTotalDisplay();
+    }   
+    function updateCartTotalDisplay() {
+        document.getElementById("total-price").textContent = cartTotal.toFixed(2);
+    }   
+</script>
+    </div>
+    
+    <div id="cart-total">
+        <h4>Cart Total: $<span id="total-price">0.00</span></h4>    
+    </div>
+</body>
+</html>
+

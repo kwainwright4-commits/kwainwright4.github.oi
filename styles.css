@@ -13,11 +13,23 @@ body {
     justify-content: center;
     gap: 20px;
 } 
-.row-container img {
+.row-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+.row-container3 img {
     width: 300px;
     height: auto;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+.row-container img {
+    width: 400px;
+    height: auto;
     margin-bottom: 10px;
-    gap: 40px;
+    gap: 20px;
 }
 .row-container2 img {
     width: 300px;
@@ -33,7 +45,28 @@ p {
     font-size: 25px;
     text-align: center;
 }
-.Add-to-cart {
+
+.home-btn {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+}
+
+.yellow-atc {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+}.pink-atc {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+}.blue-atc {
     align-items: center;
     padding: 10px 20px;
     background-color: rgb(62, 129, 62);
@@ -100,4 +133,37 @@ p {
     background-color: rgb(62, 129, 62);
     border: none;
     margin-top: auto;
+}
+.metal-atc {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+}
+.wooden-atc {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+}   
+.back-btn {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+}   
+.metal-needles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}   
+.wooden-needles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
