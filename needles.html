@@ -5,8 +5,13 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Yarn Selection</title>
  <link rel="stylesheet" href="styles.css">
+<div class="nav-buttons">
     <button class="home-btn" onclick="location.href='index.html'">Home</button>
-    <button class="back-btn" onclick="history.back()">Back</button>
+    <button class="yarn-dir-btn" onclick="location.href='yarn.html'">Yarn</button>
+    <button class="needles-dir-btn" onclick="location.href='needles.html'">Needles</button>
+    <button class="acc-dir-btn" onclick="location.href='accessories.html'">Accessories</button>
+</div>
+    
 </head>
 <body>
     <h1>Needle Selection</h1>
@@ -24,8 +29,38 @@
             <button class="metal-atc" onclick="addToCart('metal-needles', 15.00)">Add to cart</button>
         </div>  
     </div>
+    <div class="checkout"></div>
+    <h2>ready to checkout</h2>
+    <form>
+        <h3> Billing Information</h3>
+        <div class="form-group">
+            <label for="name">FullName:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>    
+        </div>
+        <div class="form-group">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="">Select a payment method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+        <button type="submit">Submit Order</button> 
+    </form>
 <script>
     let cartTotal = 0;
+    const savedCartTotal = sessionStorage.getItem("cartTotal");
+    if (savedCartTotal !== null) {
+        cartTotal = parseFloat(savedCartTotal);
+    }
     function addToCart(item, price) {
         cartTotal += price;
         updateCartTotalDisplay();
@@ -33,6 +68,8 @@
     function updateCartTotalDisplay() {
         document.getElementById("total-price").textContent = cartTotal.toFixed(2);
     }   
+    sessionStorage.setItem("cartTotal", cartTotal.toFixed(2));
+
 </script>
     </div>
     

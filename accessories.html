@@ -3,43 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yarn Selection</title>
+<title>Craft Accessories</title>
 <link rel="stylesheet" href="styles.css">
 <div class="nav-buttons">
     <button class="home-btn" onclick="location.href='index.html'">Home</button>
     <button class="yarn-dir-btn" onclick="location.href='yarn.html'">Yarn</button>
     <button class="needles-dir-btn" onclick="location.href='needles.html'">Needles</button>
-    <button class="acc-dir-btn" onclick="location.href='accessories.html'">Accessories</button> 
+    <button class="acc-dir-btn" onclick="location.href='accessories.html'">Accessories</button>
 </div>
 </head>
-<body> 
+<body>
 
-<h1>Yarn Selection</h1>
-<p>Explore our wide variety of yarns for all your crafting projects!</p>    
-<div class="row-container2">
-    <div class="blue-yarn">
-        <h3>Blue Yarn</h3>
-        <p> Price: $<span class="price" data-price="3.00">3.00</span></p>
-        <img src="blue-yarn.jpg" alt="picture of blue yarn" />
-        <button class="blue-atc" onclick="addToCart('blue-yarn', 3.00)">Add to cart</button>
+<h1>Craft Accessories</h1>
+<div class="row-container4">
+    <div class="scissors">
+        <h3>Scissors</h3>
+        <p> Price: $<span class="price" data-price="5.00">5.00</span></p>
+        <img src="scissors.jpg" alt="picture of scissors" />   
+        <button class="scissors-atc" onclick="addToCart('scissors', 5.00)">Add to cart</button>
     </div>
-    <div class="yellow-yarn">
-        <h3>Yellow Yarn</h3>
-        <p> Price: $<span class="price" data-price="3.00">3.00</span></p>
-        <img src="yellow-yarn.jpg" alt="picture of yellow yarn" />
-        <button class="yellow-atc" onclick="addToCart('yellow-yarn', 3.00)">Add to cart</button>
+        <div class="measuring-tape">
+            <h3>Measuring Tape</h3>
+            <p> Price: $<span class="price" data-price="3.00">3.00</span></p>
+            <img src="measuring-tape.jpg" alt="picture of measuring tape" />   
+            <button class="measuring-tape-atc" onclick="addToCart('measuring-tape', 3.00)">Add to cart</button>
     </div>
-    <div class="pink-yarn"> 
-        <h3>Pink Yarn</h3>
-        <p> Price: $<span class="price" data-price="3.00">3.00</span></p>
-        <img src="pink-yarn.jpg" alt="picture of pink yarn" />
-        <button class="pink-atc" onclick="addToCart('pink-yarn', 3.00)">Add to cart</button>
-    </div>
-</div> 
-<div id="cart-total">
-    <h4>Cart Total: $<span id="total-price">0.00</span></h4>    
+    <div class="stitch-markers">
+        <h3>Stitch Markers</h3>
+        <p> Price: $<span class="price" data-price="2.00">2.00</span></p>
+        <img src="stitch-markers.jpg" alt="picture of stitch markers" />   
+        <button class="stitch-markers-atc" onclick="addToCart('stitch-markers', 2.00)">Add to cart</button>
+     </div>
 </div>
-<div class="checkout"></div>
+    <div class="checkout"></div>
     <h2>ready to checkout</h2>
     <form>
         <h3> Billing Information</h3>
@@ -65,22 +61,26 @@
         </div>
         <button type="submit">Submit Order</button> 
     </form>
-<script>
-    let cartTotal = 0;
-    const savedCartTotal = sessionStorage.getItem("cartTotal");
-    if (savedCartTotal !== null) {
-        cartTotal = parseFloat(savedCartTotal);
-    }
-    function addToCart(itemClass, price) {
+    <script>
+    let cartTotal = 0;  
+        const savedCartTotal = sessionStorage.getItem("cartTotal");
+        if (savedCartTotal !== null) {
+            cartTotal = parseFloat(savedCartTotal);
+        }
+
+    function addToCart(item, price) {
         cartTotal += price;
         updateCartTotalDisplay();
-        console.log(`Added ${itemClass} with price: $${price.toFixed(2)}. New total: $${cartTotal.toFixed(2)}`);
     }
     function updateCartTotalDisplay() {
         document.getElementById("total-price").textContent = cartTotal.toFixed(2);
     }
     sessionStorage.setItem("cartTotal", cartTotal.toFixed(2));
 
-</script>
+
+    </script>
+    <div id="cart-total">
+        <h4>Cart Total: $<span id="total-price">0.00</span></h4>    
+    </div>
 </body>
 </html>
