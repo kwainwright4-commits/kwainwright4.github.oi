@@ -1,6 +1,6 @@
 body {
     font-family: harrington, sans-serif;
-    font-color: black;
+    color: black;
     background-color: rgb(110, 229, 110);
     font-size: 2rem;
 
@@ -313,7 +313,6 @@ p {
 .checkout {
     align-self: center;
     align-items: center;
-    flex: right;
     padding: 10px 20px;
     background-color: rgb(62, 129, 62);
     border: none;
