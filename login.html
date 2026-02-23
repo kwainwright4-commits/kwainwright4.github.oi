@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>log-in</title>
+    <body>
+        <div class="nav-bar">
+    <button class="home-btn" onclick="window.location.href='index.html'">Home</button>
+    <button class="yarn-dir-btn" onclick="window.location.href='yarn.html'">Yarn</button>
+    <button class="needles-dir-btn" onclick="window.location.href='needles.html'">Needles</button>   
+    <button class="acc-dir-btn" onclick="window.location.href='accessories.html'"> Accessories</button>
+    <button class="log-dir-btn" onclick="window.location.href='login.html'">Log In</button>
+    <button class="back-btn" onclick="window.history.back()">Back</button>
+</div>
+        <h1>Log In</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log In</button>
+            </div>
+        </form>
+    </body>
+
