@@ -10,7 +10,7 @@ body {
     justify-content: center;
     max-width: 100%;
     width: 75%;
-    gap: 20px;
+    gap: 10%;
     padding-left: 120px;
 
 }
@@ -345,3 +345,35 @@ p {
     font-size: 1rem;
     font-family: harrington, sans-serif;
 }   
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+.nav ul li {
+    display: inline;
+    float: center;
+}
+.nav ul li a {
+    display: horizontal;
+    padding: 10%;
+    background-color: rgb(62, 129, 62);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.logo img {
+    width: 50%;
+    height: auto;
+    padding-left: 20%;
+}
