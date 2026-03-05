@@ -1,0 +1,353 @@
+body {
+    font-family: harrington, sans-serif;
+    color: black;
+    background-color: rgb(110, 229, 110);
+    font-size: 2rem;
+}
+header {
+    background-color: rgb(62, 129, 62);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: rgb(62, 129, 62);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}   
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}   
+.nav ul li {
+    display: inline;
+    float: center;
+    width: 20%;
+}
+.nav ul li a {
+    display: horizontal;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+    width: 20%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    max-width: 50%;
+    height: auto;
+    padding-left: 30%;
+}   
+h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 5%;
+}
+p {
+    font-size: 1.9rem;
+    text-align: center;
+
+}
+.row-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 75%;
+    gap: 10%;
+    padding-left: 120px;
+
+}
+.home-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.yarn-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.needles-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}   
+.accessories-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.yarn-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.needle-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.acc-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.metal-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.wooden-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}   
+.back-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}   
+.needles-dir-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+
+.yarn-dir-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.acc-dir-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.log-dir-btn {
+    align-items: center;
+    padding: 0% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+    width: 20%;
+}   
+.row-container2 {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+    gap: 10%;
+    padding-left: 120px;
+}
+.row-container2 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    gap: 20%;
+}
+.checkout {
+    align-self: center;
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    font-size: 1rem;
+}   
+.row-container3 {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+    gap: 10%;
+    padding-left: 120px;
+}
+.row-container3 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    gap: 20%;
+}
+.row-container4 {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+    gap: 10%;
+    padding-left: 120px;
+}
+.row-container4 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    gap: 20%;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.form-group input {
+    padding: 1%;
+    font-size: 1rem;
+    width: 40%;
+    height: auto;
+}
+.login-btn {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}   
+.yellow-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+
+}.pink-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.blue-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.metal-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.wooden-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}   
+.scissors-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.measuring-tape-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
+.stitch-markers-atc {
+    align-items: center;
+    padding: 10% 20%;
+    background-color: rgb(62, 129, 62);
+    border: none;
+    margin-top: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: harrington, sans-serif;
+}
