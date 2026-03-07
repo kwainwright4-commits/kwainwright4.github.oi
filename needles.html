@@ -18,21 +18,20 @@
         <li><button class="back-btn" onclick="window.history.back()">Back</button></li> 
     </ul>
 </nav>
-    
 </head>
 <body>
     <h1>Needle Selection</h1>
     <div class="row-container3">
         <div class="wooden-needles">
-            <h3>Wooden Needles</h3>
+            <h2>Wooden Needles</h2>
             <p> Price: $<span class="price" data-price="10.00">10.00</span></p>
-            <img src="wooden-needles.jpg" alt="picture of wooden needles" />   
+            <img src="wooden-needles.jpg" alt="picture of wooden needles">   
             <button class="wooden-atc" onclick="addToCart('wooden-needles', 10.00)">Add to cart</button>
         </div>
         <div class="metal-needles">
-            <h3>Metal Needles</h3>
+            <h2>Metal Needles</h2>
             <p> Price: $<span class="price" data-price="15.00">15.00</span></p>
-            <img src="metal-needles.jpg" alt="picture of metal needles" />  
+            <img src="metal-needles.jpg" alt="picture of metal needles">  
             <button class="metal-atc" onclick="addToCart('metal-needles', 15.00)">Add to cart</button>
         </div>  
     </div>
@@ -77,8 +76,7 @@
     sessionStorage.setItem("cartTotal", cartTotal.toFixed(2));
 
 </script>
-    </div>
-    
+    </div>   
     <div id="cart-total">
         <h4>Cart Total: $<span id="total-price">0.00</span></h4>    
     </div>
