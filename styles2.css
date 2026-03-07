@@ -12,28 +12,17 @@ header {
 }
 nav {
     background-color: rgb(62, 129, 62);
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}   
-.nav ul {
-    list-style-type: none;
+    padding: 5%;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 30%;
+
+}
+nav ul {
     display: flex;
     justify-content: space-around;
     padding: 0;
-}   
-.nav ul li {
-    display: inline;
-    float: center;
-    width: 20%;
-}
-.nav ul li a {
-    display: horizontal;
-    color: white;
-    font-size: 1rem;
-    font-family: harrington, sans-serif;
-    width: 20%;
+    list-style-type: none;
 }
 
 .logo {
@@ -263,7 +252,7 @@ p {
 }
 .login-btn {
     align-items: center;
-    padding: 10% 20%;
+    padding: 5% 10%;
     background-color: rgb(62, 129, 62);
     border: none;
     margin-top: auto;
